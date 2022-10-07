@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState } from "preact/hooks";
 
-export default function Web() {
+export const TodoApp = () => {
   const [value, setValue] = useState("");
   const [todoList, setTodoList] = useState([
     "Buy Milk",
@@ -32,4 +32,4 @@ export default function Web() {
       </button>
     </main>
   );
-}
+};
