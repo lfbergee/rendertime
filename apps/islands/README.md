@@ -1,3 +1,3 @@
 # Island pattern
 
-Using Astro
+Using Astro with preact
