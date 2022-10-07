@@ -1,4 +1,3 @@
-# Magic 
+# Magic
 
-Using Qwik
-
+With Qwik and qwik city
