@@ -20,6 +20,7 @@ export default component$(() => {
       </ul>
       <input
         type="text"
+        value={state.searchString}
         onInput$={(e) =>
           (state.searchString = (e.target as HTMLInputElement).value)
         }
