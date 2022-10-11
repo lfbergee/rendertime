@@ -3,15 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import { TodoApp } from "../components/TodoApp.tsx";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Islands - Astro.">
   <h1>Island architecture with Astro</h1>
   <TodoApp client:load />
 </Layout>
-
-<style>
-  main {
-    margin: auto;
-    padding: 1.5rem;
-    max-width: 60ch;
-  }
-</style>
