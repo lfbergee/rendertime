@@ -8,14 +8,24 @@ interface State {
 
 export default component$(() => {
   const state = useStore<State>({
-    todoList: ["Buy Milk", "Write Blog", "Fill Gas"],
+    todoList: [
+      "Write talk for dev/øl",
+      "Create live examples",
+      "Run demo at dev/øl",
+    ],
     searchString: "",
   });
   return (
     <div>
       <ul>
         {state.todoList.map((item) => (
-          <li key={item}>{item}</li>
+          <li key={item}>
+            <label>
+              <input type="checkbox" />
+              <span className="checkmark"></span>
+              {item}
+            </label>
+          </li>
         ))}
       </ul>
       <input

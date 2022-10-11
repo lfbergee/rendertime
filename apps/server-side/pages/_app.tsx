@@ -1,18 +1,18 @@
 import { useState } from "react";
-import Head from 'next/head'
+import Head from "next/head";
 import "./index.css";
 
 export default function Web() {
   const [value, setValue] = useState("");
   const [todoList, setTodoList] = useState([
-    "Buy Milk",
-    "Write Blog",
-    "Fill Gas",
+    "Write talk for dev/øl",
+    "Create live examples",
+    "Run demo at dev/øl",
   ]);
 
   return (
     <>
-     <Head>
+      <Head>
         <title>SSR - Next.js</title>
       </Head>
       <h1>Server side rendering with Next.js</h1>
@@ -20,7 +20,13 @@ export default function Web() {
         <section>
           <ul>
             {todoList.map((item) => (
-              <li key={item}>{item}</li>
+              <li key={item}>
+                <label>
+                  <input type="checkbox" />
+                  <span className="checkmark"></span>
+                  {item}
+                </label>
+              </li>
             ))}
           </ul>
           <input
