@@ -10,6 +10,7 @@ export function App() {
 
   return (
     <main>
+      <h1>Client side rendering with vite and preact</h1>
       <section>
         <ul>
           {todoList.map((item) => (

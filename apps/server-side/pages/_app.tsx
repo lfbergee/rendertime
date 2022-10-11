@@ -11,6 +11,7 @@ export default function Web() {
 
   return (
     <main>
+      <h1>Server side rendering with Next.js</h1>
       <section>
         <ul>
           {todoList.map((item) => (
