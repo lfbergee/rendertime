@@ -1,6 +1,7 @@
-import { useState } from "preact/hooks";
+import "./index.css";
+import { useState } from "react";
 
-export function App() {
+export default function Web() {
   const [value, setValue] = useState("");
   const [todoList, setTodoList] = useState([
     "Buy Milk",

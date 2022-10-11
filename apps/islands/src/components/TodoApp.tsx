@@ -10,26 +10,28 @@ export const TodoApp = () => {
 
   return (
     <main>
-      <ul>
-        {todoList.map((item) => (
-          <li key={item}>{item}</li>
-        ))}
-      </ul>
-      <input
-        type="text"
-        value={value}
-        onChange={(e) => setValue(e.currentTarget.value)}
-      />
-      <button
-        onClick={() => {
-          if (value) {
-            setTodoList((prevList) => [...prevList, value]);
-            setValue("");
-          }
-        }}
-      >
-        Add
-      </button>
+      <section>
+        <ul>
+          {todoList.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+        <input
+          type="text"
+          value={value}
+          onChange={(e) => setValue(e.currentTarget.value)}
+        />
+        <button
+          onClick={() => {
+            if (value) {
+              setTodoList((prevList) => [...prevList, value]);
+              setValue("");
+            }
+          }}
+        >
+          Add
+        </button>
+      </section>
     </main>
   );
 };
